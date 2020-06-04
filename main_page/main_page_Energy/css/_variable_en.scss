@@ -1,0 +1,76 @@
+$color_dark_blue: #11486d;
+$color_light_blue: #1fb8bf;
+$color_white: #fff;
+$color_darker_blue: #2b5166;
+
+//pc
+$title: 50px;
+$user_title: 28px;
+$feed_content: 22px;
+$user_content: 14px;
+//mb
+
+// -------------------content
+
+#Road h5,
+#Benefits h3.benefit_title {
+  font-size: $user_title;
+  color: $color_light_blue;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+#Road p {
+  font-size: $user_content;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: left;
+  color: $color_dark_blue;
+}
+button.use_case {
+  width: 145px;
+  height: 40px;
+  background-color: $color_darker_blue;
+  border-radius: 50px;
+  color: $color_light_blue;
+}
+#Benefits h6,
+#Feedback h6,
+#Usecase h6 {
+  font-weight: bold;
+  font-size: $title;
+  font-family: 'Maven Pro', sans-serif;
+  text-align: center;
+  color: $color_darker_blue;
+}
+#Benefits h6:after,
+#Feedback h6:after,
+#Usecase h6:after {
+  content: '';
+  display: block;
+  width: 147px;
+  height: 6px;
+  background-color: $color_light_blue;
+  margin: 20px auto 0 auto;
+}
+#Feedback h6 {
+  text-align: left;
+}
+#Feedback h6:after {
+  background-color: $color_white;
+  margin: 20px auto 0 0;
+}
+#Feedback p {
+  font-size: $feed_content;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  text-align: left;
+  color: $color_dark_blue;
+}

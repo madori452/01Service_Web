@@ -1,0 +1,174 @@
+#Banner h1,
+#Banner h2 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  letter-spacing: 3.2px;
+}
+
+#Banner h3 {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Maven Pro", sans-serif;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+#Banner h4 {
+  font-size: 28px;
+  color: #fff;
+  font-family: "Maven Pro", sans-serif;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  letter-spacing: 4.2px;
+}
+
+#Road h5,
+#Benefits h3.benefit_title {
+  font-size: 26px;
+  color: #11486d;
+  font-family: "Noto Sans TC", sans-serif;
+  position: relative;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+#Benefits h3.benefit_title {
+  text-align: center;
+}
+
+#Benefits h6,
+#Feedback h6,
+#Usecase h6 {
+  font-size: 50px;
+  color: #11486d;
+  font-family: "Maven Pro", sans-serif;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+#Benefits h6:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 7px;
+  background-color: #c0eded;
+  margin: 10px auto 0 auto;
+}
+
+#Feedback h6:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 7px;
+  background-color: #c0eded;
+  margin: 10px auto 0 auto;
+}
+
+#Usecase h6:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 7px;
+  background-color: #c0eded;
+  margin: 10px auto 0 auto;
+}
+
+#Road button.use_case {
+  width: 154px;
+  height: 50px;
+  border-radius: 31px;
+  font-family: "Maven Pro", sans-serif;
+  background-color: #11486d;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+#Road p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  color: #11486d;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+p.benefit_content {
+  font-size: 16px;
+  color: #11486d;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.73;
+  letter-spacing: 2px;
+  font-weight: 100;
+  padding: 0 100px;
+}
+
+#Feedback .carousel-item-next,
+#Feedback .active.carousel-item-right {
+  transform: translateX(120%);
+}
+@supports (transform-style: preserve-3d) {
+  #Feedback .carousel-item-next,
+#Feedback .active.carousel-item-right {
+    transform: translate3d(120%, 0, 0);
+  }
+}
+
+#Feedback .carousel-item-prev,
+#Feedback .active.carousel-item-left {
+  transform: translateX(-120%);
+}
+@supports (transform-style: preserve-3d) {
+  #Feedback .carousel-item-prev,
+#Feedback .active.carousel-item-left {
+    transform: translate3d(-120%, 0, 0);
+  }
+}
+
+@media (max-width: 414px) {
+  #Banner h1,
+#Banner h2 {
+    font-size: 40px;
+  }
+
+  #Banner h3 {
+    font-size: 36px;
+  }
+
+  #Banner h4 {
+    font-size: 22px;
+  }
+
+  #Road h5 {
+    font-size: 22px;
+  }
+
+  #Road button.use_case {
+    width: 160px;
+    height: 55px;
+  }
+
+  #Road p {
+    font-size: 14px;
+  }
+
+  #Benefits h3.benefit_title {
+    font-size: 22px;
+  }
+
+  p.benefit_content {
+    padding: 0px;
+  }
+
+  #Benefits h6,
+#Feedback h6,
+#Usecase h6 {
+    font-size: 36px;
+  }
+}

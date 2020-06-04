@@ -1,0 +1,140 @@
+$color_dark_blue: #11486d;
+$color_light_blue: #1fb8bf;
+$color_white: #fff;
+$color_darker_blue: #2b5166;
+$light-blue-grey: #c0eded;
+//pc
+$title_h1: 56px;
+$title_h3: 32px;
+$subtitle_h4: 32px;
+$content_p: 14px;
+
+//tb
+$title_h1_tb: 36px;
+$title_h3_tb: 20px;
+$subtitle_h4_tb: 24px;
+$content_p_tb: 14px;
+//mb
+$title_h1_mb: 30px;
+// -------------------content
+
+#Banner h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: $title_h1;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: $color_light_blue;
+  text-align: center;
+  font-weight: 700;
+}
+#Banner h3 {
+  font-size: $title_h3;
+  text-align: center;
+  color: $color_dark_blue;
+}
+
+#Belife h2,
+#Works h2,
+#Usecase h6 {
+  font-size: $title_h1;
+  font-family: 'Maven Pro', sans-serif;
+  color: $color_dark_blue;
+  font-weight: 700;
+}
+#Belife h2:after,
+#Works h2:after,
+#Usecase h6:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 148px;
+  height: 6px;
+  background-color: $light-blue-grey;
+  margin-top: 20px;
+}
+#Usecase h6 {
+  text-align: center;
+}
+#Usecase h6:after {
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+#Belife h4 {
+  font-size: $subtitle_h4;
+  color: $color_dark_blue;
+  letter-spacing: 1.4px;
+  margin-top: 60px;
+  font-weight: 900;
+}
+
+#Belife p {
+  font-size: $content_p;
+  color: $color_dark_blue;
+  line-height: 2.1;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+#Works h2 {
+  text-align: center;
+}
+#Works h2:after {
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+#Map h4,
+#Map h2,
+#Map h3 {
+  text-align: center;
+}
+#Map h4 {
+  font-size: $subtitle_h4;
+  color: $color_light_blue;
+  font-family: 'Maven Pro', sans-serif;
+  letter-spacing: 2.08px;
+  font-weight: 900;
+}
+#Map h2 {
+  font-family: 'Maven Pro', sans-serif;
+  color: $color_white;
+  font-size: $title_h1;
+}
+#Map h3 {
+  font-family: 'Maven Pro', sans-serif;
+  letter-spacing: 2.08px;
+  font-weight: 900;
+  color: $light-blue-grey;
+  font-size: $subtitle_h4;
+}
+@media (max-width: 1024px) {
+  #Banner h1,
+  #Belife h2,
+  #Works h2,
+  #Usecase h6,
+  #Map h2 {
+    font-size: $title_h1_tb;
+  }
+  #Banner h3 {
+    font-size: $title_h3_tb;
+  }
+  #Belife h4,
+  #Map h4,
+  #Map h3 {
+    font-size: $subtitle_h4_tb;
+  }
+  #Belife p {
+    font-size: $content_p_tb;
+  }
+}
+@media (max-width: 414px) {
+  #Banner h1,
+  #Belife h2,
+  #Works h2,
+  #Usecase h6,
+  #Map h2 {
+    font-size: $title_h1_mb;
+  }
+  .input {
+    flex-direction: column !important;
+  }
+}

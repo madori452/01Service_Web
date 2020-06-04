@@ -1,0 +1,156 @@
+.navbar-brand {
+  color: #11486d !important;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.94);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  outline: none;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.carousel-indicators {
+  bottom: 100px;
+}
+
+.nav-item {
+  margin-right: 40px;
+}
+
+#fish_graphic h2,
+#slove h2,
+#offer h2,
+#dashboard h2,
+#news h2 {
+  font-weight: 900;
+  color: #11486d;
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.text {
+  color: #11486d;
+  font-size: 28px;
+}
+
+.title_decor {
+  width: 148px;
+  height: 6px;
+  margin: 0 auto;
+  background-color: #c0eded;
+}
+
+.dialog01_content h3 {
+  color: #2b5166;
+  font-size: 24px;
+}
+
+.dialog01_content p {
+  color: #2b5166;
+  font-size: 28px;
+}
+
+.bird {
+  position: absolute;
+  width: 50px;
+  top: 100px;
+  left: -20px;
+  animation: fly 6s linear infinite;
+}
+.bird .wing {
+  position: absolute;
+  width: 50%;
+  height: 20px;
+  border-top: 4px solid #11486d;
+  border-radius: 100%;
+}
+.bird .wing.-left {
+  transform-origin: 100% 50%;
+  animation: wingLeft 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+}
+.bird .wing.-right {
+  right: 0;
+  transform-origin: 0 50%;
+  animation: wingRight 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+}
+
+.bird02 {
+  width: 80px;
+  top: 100px;
+  left: 210px;
+  animation: fly 5s 0.5s linear infinite;
+}
+
+@keyframes wingLeft {
+  0% {
+    transform: rotateZ(30deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+@keyframes wingRight {
+  0% {
+    transform: rotateZ(-30deg);
+  }
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
+@keyframes fly {
+  0% {
+    opacity: 0;
+    transform: translateZ(500px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateZ(100px);
+  }
+  100% {
+    transform: translateZ(0px) scale(0);
+  }
+}
+@media (max-width: 1024px) {
+  #fish_graphic h2,
+#slove h2,
+#offer h2,
+#dashboard h2,
+#news h2 {
+    font-size: 40px;
+  }
+
+  .carousel-indicators {
+    bottom: 30px;
+  }
+}
+@media (max-width: 414px) {
+  #fish_graphic h2,
+#slove h2,
+#offer h2,
+#dashboard h2,
+#news h2 {
+    font-size: 32px;
+  }
+
+  .title_decor {
+    width: 80px;
+  }
+
+  footer .container {
+    padding: 0 50px;
+  }
+}

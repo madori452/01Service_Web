@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 941 967">
+      <defs>
+        <clipPath id="shape">
+          <path
+            transform="translate(0,0) scale(1)"
+            d="M778.43,783.46c-30.45-6-60-15.24-92.42-19.86-92.7-13.25-191.86-10-282.36,11.5C315.46,796.05,217.12,806,135,765.87,73.51,735.84,27,675,13,606.45-4.62,519.62,29.51,415.36,112.36,379.4c70.78-30.72,163.41-24.87,172.1-125.44,3.13-36.21-1.5-72.55,7.91-108a234.05,234.05,0,0,1,35.78-75.71C349.28,40.6,377.17,16,409-.5h.67c173.59.45,235.38-.11,368.8-.11Z"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+    <div class="path_car" />
+      <div><img src="img/car-03.png" class="car_banner"></div>
+    </div >
+  </body>
+
+  <style>
+    * {
+      border: 1px solid #ddd;
+    }
+
+    .path_car {
+      width: 1000px;
+      height: 1000px;
+      position: absolute;
+      top: 0;
+      /* background-color: tomato; */
+      -webkit-clip-path: url(#shape);
+      clip-path: url(#shape);
+      background-size: cover;
+      background-repeat: repeat-x;
+      background-image: url('img/home_page_car-02.png');
+      animation: path_car 155s infinite forwards;
+      transform: translate(0, -152px);
+    }
+
+    img.car_banner{
+      width: 220px;
+      position: absolute;
+      bottom: 288px;
+      z-index: 2;
+    left: 250px;
+    }
+
+    @keyframes path_car {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: -1000% 50%;
+      }
+    }
+  </style>
+</html>

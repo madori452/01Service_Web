@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+  /* border: 1px solid #000; */
+}
+
+.pageload {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  background-color: #00bbcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageload_end {
+  display: none;
+  transition: 1s;
+}
+
+/* text-------------------- */
+.pageload p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1fb8bf, #fff, #1fb8bf);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  z-index: 3;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+/* Percent_style---------- */
+.pageload .percent {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: lighter;
+  z-index: 10;
+  display: -webkit-box;
+  display: flex;
+  margin-top: 500px;
+  justify-content: center;
+}
+
+.percent__inner {
+  display: inline-block;
+}
+
+.percent__num {
+  display: inline-block;
+  font-size: 45px;
+}
+
+.percent__sign {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.wind {
+  position: relative;
+  /* background-color: #fff; */
+}
+
+@media (max-width: 1440px) {
+  .pageload .percent {
+    margin-top: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .pageload .percent {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .pageload .percent {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 414px) {
+  .pageload {
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+  .pageload p {
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  #bg {
+    transform: scale(2);
+  }
+  .wind {
+    margin-top: 100px;
+  }
+  .pageload .percent {
+    margin-top: 200px;
+  }
+}

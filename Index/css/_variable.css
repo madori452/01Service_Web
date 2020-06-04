@@ -1,0 +1,132 @@
+#Banner h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0.56px;
+  color: #1fb8bf;
+  text-align: center;
+  font-weight: 700;
+}
+
+#Banner h3 {
+  font-size: 32px;
+  text-align: center;
+  color: #11486d;
+}
+
+#Belife h2,
+#Works h2,
+#Usecase h6 {
+  font-size: 56px;
+  font-family: "Maven Pro", sans-serif;
+  color: #11486d;
+  font-weight: 700;
+}
+
+#Belife h2:after,
+#Works h2:after,
+#Usecase h6:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 148px;
+  height: 6px;
+  background-color: #c0eded;
+  margin-top: 20px;
+}
+
+#Usecase h6 {
+  text-align: center;
+}
+
+#Usecase h6:after {
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+#Belife h4 {
+  font-size: 26px;
+  color: #11486d;
+  letter-spacing: 1.4px;
+  margin-top: 60px;
+}
+
+#Belife p {
+  font-size: 18px;
+  color: #11486d;
+  line-height: 2.1;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+#Works h2 {
+  text-align: center;
+}
+
+#Works h2:after {
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+#Map h4,
+#Map h2,
+#Map h3 {
+  text-align: center;
+}
+
+#Map h4 {
+  font-size: 26px;
+  color: #1fb8bf;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2.08px;
+}
+
+#Map h2 {
+  font-family: "Maven Pro", sans-serif;
+  color: #fff;
+  font-size: 56px;
+}
+
+#Map h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #c0eded;
+  font-size: 26px;
+  letter-spacing: 8.4px;
+}
+
+@media (max-width: 1024px) {
+  #Banner h1,
+#Belife h2,
+#Works h2,
+#Usecase h6,
+#Map h2 {
+    font-size: 36px;
+  }
+
+  #Banner h3 {
+    font-size: 20px;
+  }
+
+  #Belife h4,
+#Map h4,
+#Map h3 {
+    font-size: 18px;
+  }
+
+  #Belife p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 414px) {
+  #Banner h1,
+#Belife h2,
+#Works h2,
+#Usecase h6,
+#Map h2 {
+    font-size: 30px;
+  }
+
+  .input {
+    flex-direction: column !important;
+  }
+}

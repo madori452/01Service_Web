@@ -1,0 +1,631 @@
+html,
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  overflow-x: hidden;
+}
+* {
+  /* border: 1px solid #ddd; */
+}
+
+section {
+  position: relative;
+}
+/* Back_top---------------------------------- */
+.top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: #1fb8bf;
+  border-radius: 50%;
+  z-index: 10;
+  bottom: 50px;
+  right: 100px;
+  cursor: pointer;
+  display: none;
+}
+.top:after {
+  content: '＾';
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+}
+/* Banner----------------------------------------- */
+#Banner {
+  margin-top: -100px;
+  background-image: url('../img/Index/bg_banner.png');
+  padding: 0px 0px 100px 0px;
+  background-size: cover;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+#Banner .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+#Banner h1 {
+  border-bottom: 1px solid #1fb8bf40;
+}
+#Banner .btn_case {
+  width: 358px;
+  height: 57px;
+  background-color: #3bd1d6;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1.68px;
+  margin: 40px auto 0px auto;
+  text-align: center;
+  border-radius: 6px;
+  line-height: 42px;
+}
+img.banner01_main_pic {
+  position: relative;
+}
+#Banner .carousel-indicators li {
+  background-color: #ddd;
+}
+.path_car {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-clip-path: url(#shape);
+  clip-path: url(#shape);
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-image: url('../img/SVG_Index/home_page_car-02.png');
+  animation: path_car 105s infinite forwards;
+  transform: translate(100px, -102px);
+}
+.carousel-indicators .active {
+  background-color: #3bd1d6 !important;
+}
+img.car_banner {
+  width: 320px;
+  position: absolute;
+  bottom: 198px;
+  z-index: 2;
+  left: 250px;
+}
+img.leaves {
+  max-width: 700px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+}
+@keyframes path_car {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -1000% 0%;
+  }
+}
+/* banner01 def */
+.ele01-cls-1 {
+  fill: none;
+}
+
+.ele01-cls-2 {
+  clip-path: url(#clip-path);
+}
+
+.ele01-cls-3 {
+  fill: #11486d;
+}
+
+.ele01-cls-4 {
+  fill: #fff;
+}
+
+.ele01-cls-5 {
+  fill: #c0eded;
+}
+#banner_fram01,
+#banner_fram02,
+#banner_fram03 {
+  position: absolute;
+}
+#banner_fram01 {
+  width: 90px;
+  top: 40%;
+  right: 250px;
+}
+#banner_fram02 {
+  width: 80px;
+  top: 37%;
+  right: 390px;
+}
+#banner_fram03 {
+  width: 70px;
+  top: 39%;
+  right: 500px;
+}
+
+#banner_wind01 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 3s linear infinite;
+}
+.btn_case {
+  cursor: pointer;
+  animation: btn_case 1s infinite alternate;
+}
+.big_wind {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 3s linear infinite;
+}
+
+#favorite-3 {
+  animation: favorite 1s infinite alternate;
+}
+
+@keyframes favorite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1150;
+  }
+}
+
+@keyframes btn_case {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+img.bannner_car_mobile {
+  display: none;
+}
+svg.svg_car {
+  visibility: visible;
+  display: block;
+}
+.path_car,
+img.leaves {
+  display: block;
+}
+/* Benefit-------------------------- */
+#Belife {
+  padding: 150px 0px 200px 0px;
+  background-image: url('../img/Index/bg_belife.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+/* Works----------------------------- */
+#Works {
+  padding: 300px 0px 400px 0;
+  background-image: url('../img/Index/HIW_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+#Works .container {
+  max-width: 1440px;
+}
+#Works .row {
+  margin-top: 130px;
+}
+#Works .col-lg-2 {
+  padding: 20px;
+}
+
+img.ribbon {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 30px;
+}
+img.ribbon04 {
+  width: 140px;
+}
+img.ribbon03,
+img.ribbon05 {
+  width: 180px;
+}
+#Works img.sun_rise {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 30%;
+  margin-top: 132px;
+}
+.sun_rise_ani {
+  animation: sun_rise 2s forwards;
+}
+@keyframes sun_rise {
+  0% {
+    margin-top: 132px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+/* Map------------------------ */
+#Map {
+  padding: 200px 0px;
+  background-color: #0e3d5d;
+  margin-top: -2px;
+}
+#Map .container {
+  padding: 0 50px;
+}
+img.bus_car {
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  right: 350px;
+}
+.bus_run {
+  animation: bus_run 10s infinite;
+}
+.row_map {
+  position: relative;
+  display: block;
+}
+.row_map_mb {
+  display: none;
+}
+img.map_global {
+  margin-top: 120px;
+}
+img.map {
+  position: absolute;
+  max-width: 180px;
+}
+img.map01 {
+  top: 170px;
+  left: 620px;
+}
+img.map02 {
+  max-width: 120px;
+  top: 220px;
+  right: 180px;
+}
+img.map03 {
+  max-width: 150px;
+  top: 240px;
+  right: 35px;
+}
+img.map04 {
+  max-width: 150px;
+  top: 320px;
+  right: 35%;
+}
+img.map05 {
+  max-width: 150px;
+  top: 300px;
+  right: 5%;
+}
+img.map06 {
+  max-width: 150px;
+  top: 380px;
+  right: 8%;
+}
+img.map07 {
+  max-width: 150px;
+  top: 380px;
+  right: -70px;
+}
+@keyframes bus_run {
+  0% {
+    left: 120%;
+  }
+
+  100% {
+    left: -20%;
+  }
+}
+
+/* Partner---------------------------- */
+#Partner {
+  padding: 100px 0px;
+  background-image: url('../img/Index/partnerbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* Usecase----------------- */
+#Usecase {
+  padding: 200px 0 300px 0;
+  background-color: #c0eded45;
+  overflow: hidden;
+}
+#Usecase .slide {
+  display: flex;
+  justify-content: center;
+}
+.slide01 {
+  margin-top: 100px;
+}
+img.slide_pic {
+  margin-right: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px -2px 10px #0000004f;
+}
+
+h4.text,
+h4.text02 {
+  text-align: center;
+  font-size: 40px;
+  line-height: calc(50% - 50px);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-family: 'Maven Pro', sans-serif;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.65);
+}
+h4.text02 {
+  top: 60%;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #c0eded;
+  border-radius: 50%;
+  position: absolute;
+  animation: circle_ani 2s linear infinite alternate;
+}
+.circle1 {
+  right: 50px;
+  top: 550px;
+  background-color: #11486d;
+  animation: circle_ani 2s 0.5s linear infinite alternate;
+}
+.circle2 {
+  width: 50px;
+  height: 50px;
+  left: 150px;
+  top: 450px;
+  animation: circle_ani 5s 0.5s linear infinite alternate;
+}
+.circle3 {
+  width: 50px;
+  height: 50px;
+  right: 300px;
+  top: 450px;
+  background-color: #cbcbcb;
+  animation: circle_ani 5s 1s linear infinite alternate;
+}
+
+.allcircle {
+  margin-bottom: 10px;
+}
+@keyframes circle_ani {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0;
+    top: 250px;
+  }
+  50% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.33, 0.33);
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+.tarkikComandSlider {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.slick-dots li,
+.slick-arrow,
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.comandSlider__item {
+  -webkit-transition: box-shadow 2s;
+  transition: box-shadow 2s;
+  cursor: pointer;
+  position: relative;
+  margin: 0 10px;
+  box-shadow: inset -141px -129px 200px rgba(0, 0, 0, 0.25);
+}
+
+.comandSlider__item_photo {
+  max-width: 100%;
+}
+/* 1660 */
+@media (max-width: 1660px) {
+  img.bannner_car_mobile {
+    display: block;
+  }
+  svg.svg_car {
+    visibility: hidden;
+    display: none;
+  }
+  .path_car,
+  img.leaves {
+    display: none;
+  }
+}
+/* 1024 */
+@media (max-width: 1024px) {
+  #Banner .btn_case {
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    line-height: 40px;
+  }
+  #Belife {
+    padding: 100px 0;
+  }
+  #Works {
+    padding: 200px 0 300px 0;
+    background-position: 72% 13%;
+  }
+  #Works img.sun_rise {
+    left: 14%;
+  }
+  img.map {
+    max-width: 140px;
+  }
+  img.map02,
+  img.map03 {
+    max-width: 100px;
+  }
+  img.map04,
+  img.map05,
+  img.map06 {
+    max-width: 110px;
+  }
+  img.map06 {
+    top: 362px;
+    right: 10%;
+  }
+  img.map07 {
+    max-width: 115px;
+    top: 380px;
+    right: -1px;
+  }
+  #Partner {
+    padding: 80px 0px;
+  }
+  #Usecase {
+    padding: 100px 0 200px 0;
+  }
+  img.ribbon {
+    top: 10px;
+  }
+}
+/* 991----------------------------- */
+@media (max-width: 991px) {
+  .banner01_pic {
+    order: 1;
+  }
+  .banner01 {
+    order: 2;
+  }
+  .row_map {
+    display: none;
+  }
+  .row_map_mb {
+    display: block;
+  }
+  .row_map_mb img {
+    display: block;
+    margin-top: 50px;
+  }
+  #Map {
+    padding: 50px 0;
+  }
+}
+
+/* 768----------------------------- */
+@media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: -50px;
+  }
+  #Works img.sun_rise {
+    top: -55px;
+  }
+
+  #Partner {
+    padding: 60px 0px;
+  }
+}
+/* 414---------------------- */
+
+@media (max-width: 414px) {
+  img.bus_car {
+    right: 380px;
+  }
+  /* Back_top---------------------------------- */
+  .top {
+    bottom: 50px;
+    right: 50px;
+  }
+  #Banner {
+    margin-top: 0px;
+  }
+  img.bannner_car_mobile {
+    height: 395px;
+    margin-left: 58px;
+    margin-top: -10px;
+  }
+  #Belife {
+    padding: 10px 0 50px 0;
+  }
+  .carousel-indicators {
+    bottom: -50px;
+  }
+  #Works .row {
+    width: 1200px;
+    overflow-x: auto;
+  }
+  #Works .offset-1 {
+    margin-left: 66px;
+  }
+  #Works {
+    padding: 100px 0px 200px 0;
+    background-image: url(../img/Index/work_bg_mb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+  }
+  #Works .row {
+    margin-top: 60px;
+  }
+  #Works img.sun_rise {
+    left: 18%;
+    width: 120px;
+    top: -50px;
+  }
+  #Works .col-2 {
+    padding: 0 20px;
+  }
+  img.ribbon {
+    width: 180px;
+  }
+  #Works .container {
+    overflow-y: auto;
+  }
+  h4.text,
+  h4.text02 {
+    font-size: 20px;
+  }
+  #Partner {
+    padding: 40px 0px;
+    background-size: cover;
+  }
+}

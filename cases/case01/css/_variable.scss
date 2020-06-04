@@ -1,0 +1,171 @@
+$color_dark_blue: #11486d;
+$color_light_blue: #c0eded;
+$color_darker_blue: #2b5166;
+$title_fz: 60px;
+$content_fz: 28px;
+$title_fz_tb: 40px;
+
+$title_mb_fz: 60px;
+$title_fz_tb: 40px;
+$title_fz_mb: 32px;
+// -------------------nav
+.navbar-brand {
+  color: $color_dark_blue !important;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.94);
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  outline: none;
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.carousel-indicators {
+  bottom: 100px;
+}
+.nav-item {
+  margin-right: 40px;
+}
+// -------------------content
+#fish_graphic h2,
+#slove h2,
+#offer h2,
+#dashboard h2,
+#news h2 {
+  font-weight: 900;
+  color: $color_dark_blue;
+  font-size: $title_fz;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.text {
+  color: $color_dark_blue;
+  font-size: $content_fz;
+}
+.title_decor {
+  width: 148px;
+  height: 6px;
+  margin: 0 auto;
+  background-color: $color_light_blue;
+}
+
+// ----------------slide
+.dialog01_content h3 {
+  color: $color_darker_blue;
+  font-size: 24px;
+}
+.dialog01_content p {
+  color: $color_darker_blue;
+  font-size: $content_fz;
+}
+//----------bird
+
+.bird {
+  position: absolute;
+  width: 50px;
+  top: 100px;
+  left: -20px;
+  animation: fly 6s linear infinite;
+
+  .wing {
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    border-top: 4px solid $color_dark_blue;
+    border-radius: 100%;
+
+    &.-left {
+      transform-origin: 100% 50%;
+      animation: wingLeft 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    &.-right {
+      right: 0;
+      transform-origin: 0 50%;
+      animation: wingRight 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+    }
+  }
+}
+.bird02 {
+  width: 80px;
+  top: 100px;
+  left: 210px;
+  animation: fly 5s 0.5s linear infinite;
+}
+@keyframes wingLeft {
+  0% {
+    transform: rotateZ(30deg);
+  }
+
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+
+@keyframes wingRight {
+  0% {
+    transform: rotateZ(-30deg);
+  }
+
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
+@keyframes fly {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(500px);
+    transform: translateZ(500px);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+  }
+  100% {
+    -webkit-transform: translateZ(0px) scale(0);
+    transform: translateZ(0px) scale(0);
+  }
+}
+@media (max-width: 1024px) {
+  #fish_graphic h2,
+  #slove h2,
+  #offer h2,
+  #dashboard h2,
+  #news h2 {
+    font-size: $title_fz_tb;
+  }
+  .carousel-indicators {
+    bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-indicators {
+    // bottom: 50px;
+  }
+}
+@media (max-width: 414px) {
+  #fish_graphic h2,
+  #slove h2,
+  #offer h2,
+  #dashboard h2,
+  #news h2 {
+    font-size: $title_fz_mb;
+  }
+  .title_decor {
+    width: 80px;
+  }
+  footer .container {
+    padding: 0 50px;
+  }
+}

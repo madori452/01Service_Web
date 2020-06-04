@@ -1,0 +1,173 @@
+$color_dark_blue: #11486d;
+$color_light_blue: #c0eded;
+$color_white: #fff;
+$color_darker_blue: #2b5166;
+
+//pc
+$title_fz: 50px;
+$banner_title: 50px;
+$banner_sub: 28px;
+$content_title: 26px;
+$content_text: 16px;
+$text-shadow-banner: 0 3px 6px rgba(0, 0, 0, 0.16);
+//mb
+$title_fz_mb: 40px;
+$banner_title_mb: 36px;
+$banner_sub_mb: 22px;
+$content_text_mb: 14px;
+// -------------------content
+
+#Banner h1,
+#Banner h2 {
+  font-weight: 900;
+  color: $color_white;
+  font-size: $title_fz;
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+  text-shadow: $text-shadow-banner;
+  letter-spacing: 3.2px;
+}
+#Banner h3 {
+  font-size: $title_fz;
+  color: $color_white;
+  font-family: 'Maven Pro', sans-serif;
+  text-shadow: $text-shadow-banner;
+}
+#Banner h4 {
+  font-size: $banner_sub;
+  color: $color_white;
+  font-family: 'Maven Pro', sans-serif;
+  text-shadow: $text-shadow-banner;
+  letter-spacing: 4.2px;
+}
+
+#Road h5,
+#Benefits h3.benefit_title {
+  font-size: $content_title;
+  color: $color_dark_blue;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+#Benefits h3.benefit_title {
+  text-align: center;
+}
+#Benefits h6,
+#Feedback h6,
+#Usecase h6 {
+  font-size: $banner_title;
+  color: $color_dark_blue;
+  font-family: 'Maven Pro', sans-serif;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+#Benefits h6:after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 7px;
+  background-color: $color_light_blue;
+  margin: 10px auto 0 auto;
+}
+#Feedback h6:after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 7px;
+  background-color: $color_light_blue;
+  margin: 10px auto 0 auto;
+}
+#Usecase h6:after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 7px;
+  background-color: $color_light_blue;
+  margin: 10px auto 0 auto;
+}
+#Road button.use_case {
+  width: 154px;
+  height: 50px;
+  border-radius: 31px;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: $color_dark_blue;
+  color: $color_white;
+  letter-spacing: 2px;
+}
+#Road p {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: $content_text;
+  color: $color_dark_blue;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+p.benefit_content {
+  font-size: $content_text;
+  color: $color_dark_blue;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.73;
+  letter-spacing: 2px;
+  font-weight: 100;
+  padding: 0 100px;
+}
+
+#Feedback .carousel-item-next,
+#Feedback .active.carousel-item-right {
+  transform: translateX(120%);
+
+  @supports (transform-style: preserve-3d) {
+    transform: translate3d(120%, 0, 0);
+  }
+}
+
+#Feedback .carousel-item-prev,
+#Feedback .active.carousel-item-left {
+  transform: translateX(-120%);
+
+  @supports (transform-style: preserve-3d) {
+    transform: translate3d(-120%, 0, 0);
+  }
+}
+
+@media (max-width: 414px) {
+  #Banner h1,
+  #Banner h2 {
+    font-size: $title_fz_mb;
+  }
+  #Banner h3 {
+    font-size: $banner_title_mb;
+  }
+  #Banner h4 {
+    font-size: $banner_sub_mb;
+  }
+  #Road h5 {
+    font-size: $banner_sub_mb;
+  }
+  #Road button.use_case {
+    width: 160px;
+    height: 55px;
+  }
+  #Road p {
+    font-size: $content_text_mb;
+  }
+  #Benefits h3.benefit_title {
+    font-size: $banner_sub_mb;
+  }
+  p.benefit_content {
+    padding: 0px;
+  }
+
+  #Benefits h6,
+  #Feedback h6,
+  #Usecase h6 {
+    font-size: $banner_title_mb;
+  }
+}

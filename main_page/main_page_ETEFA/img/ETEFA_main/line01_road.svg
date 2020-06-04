@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2208" height="2463" viewBox="0 0 2208 2463">
+  <defs>
+    <clipPath id="clip-line01_road">
+      <rect width="2208" height="2463"/>
+    </clipPath>
+  </defs>
+  <g id="line01_road" clip-path="url(#clip-line01_road)">
+    <path id="road_line" d="M2733.306,101.1V344.2c0,182.033-153.372,329.6-342.562,329.6H1277.8c-189.193,0-342.563,147.565-342.563,329.6v23.862c0,182.033,153.369,329.6,342.563,329.6H2468.246c189.19,0,342.562,147.565,342.562,329.6h0c0,182.033-153.372,329.6-342.562,329.6l-1190.444.51c-189.193,0-342.562,147.568-342.562,329.6V2529.6" transform="translate(-799.716 -100.605)" fill="none" stroke="#11486d" stroke-miterlimit="10" stroke-width="7"/>
+    <g id="Group_3111" data-name="Group 3111" transform="translate(105 2398.18)">
+      <path id="Path_84985" data-name="Path 84985" d="M3177.839,3005.023l30.952,30.952,30.952-30.952" transform="translate(-3177.839 -3005.023)" fill="none" stroke="#11486d" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+    </g>
+  </g>
+</svg>

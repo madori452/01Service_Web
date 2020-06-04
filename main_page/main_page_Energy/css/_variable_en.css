@@ -1,0 +1,69 @@
+#Road h5,
+#Benefits h3.benefit_title {
+  font-size: 28px;
+  color: #1fb8bf;
+  font-family: "Noto Sans TC", sans-serif;
+  position: relative;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+#Road p {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #11486d;
+}
+
+button.use_case {
+  width: 145px;
+  height: 40px;
+  background-color: #2b5166;
+  border-radius: 50px;
+  color: #1fb8bf;
+}
+
+#Benefits h6,
+#Feedback h6,
+#Usecase h6 {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Maven Pro", sans-serif;
+  text-align: center;
+  color: #2b5166;
+}
+
+#Benefits h6:after,
+#Feedback h6:after,
+#Usecase h6:after {
+  content: "";
+  display: block;
+  width: 147px;
+  height: 6px;
+  background-color: #1fb8bf;
+  margin: 20px auto 0 auto;
+}
+
+#Feedback h6 {
+  text-align: left;
+}
+
+#Feedback h6:after {
+  background-color: #fff;
+  margin: 20px auto 0 0;
+}
+
+#Feedback p {
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #11486d;
+}

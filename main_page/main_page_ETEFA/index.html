@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <!-- 中文 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 英文 -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/title_icon.ico" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+
+    <link rel="stylesheet" href="css/_variable.css" />
+    <link rel="stylesheet" href="css/nav_footer.css" />
+    <link rel="stylesheet" href="css/load.css" />
+    <link rel="stylesheet" href="css/etefa_main.css" />
+
+    <title>ETEFA</title>
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="pageload">
+      <div class="page" id="page">
+        <!-- load_road -->
+        <div class="car_ani">
+          <img src="img/ETEFA_main/Illustration-35.svg" class="load_car" />
+          <div class="shadow"></div>
+          <div class="bubble01"></div>
+          <div class="bubble02"></div>
+        </div>
+
+        <div class="percent">
+          <div class="percent__inner">
+            <div class="percent__num" id="count">50</div>
+            <div class="percent__sign">%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html"><img src="img/nav_footer/ECS_logo.svg" style="width: 190px;" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <li class="nav-item dropdown active ml-lg-4 ml-0">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                解決方案
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/main_page_Energy/index.html">能源管理</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/main_page_ETEFA/index.html">車隊管理</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                導入實例
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/cases/case01/index.html">Fish &amp; Fin</a>
+                <!-- <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">ETEFA</a> -->
+              </div>
+            </li>
+    
+    
+            <!-- <a class="nav-item nav-link" href="#">服務項目</a> -->
+    
+            <div class="dropdown mr-3 ">
+              <a class="btn lan_change dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                中文
+              </a>
+    
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <!-- <a class="dropdown-item" href="/main_page_Energy/index_EN.html">英文</a> -->
+                <a class="dropdown-item" href="/main_page_Energy/index.html">中文</a>
+              </div>
+            </div>
+            <a class="consult nav-item nav-link" href="mailto:BD@ecs.com.tw">立即諮詢</a>
+          </div>
+        </div>
+    
+    
+      </div>
+    </nav>
+    <!-- Back To Top -->
+    <div class="backtop">
+      <div class="top"></div>
+    </div>
+    <!-- Banner -->
+    <section id="Banner">
+      <div class="container">
+        <div class="row title">
+          <div
+            class="col-lg-4 d-flex justify-content-center justify-content-lg-end align-items-center"
+          >
+            <img src="img/ETEFA_main/decor_star.svg" class="icon_banner" />
+            <h2>ECS</h2>
+          </div>
+          <div class="col-lg-8">
+            <h3>Fleet Management</h3>
+            <h4>
+              智慧巴士暨商用車服務套裝<img src="img/ETEFA_main/cloud_wh.svg" class="cloud_banner" />
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row Car_Banner_ani">
+        <div class="Banner_tree">
+          <img src="img/ETEFA_main/tree_wh.svg" class="banner_tree" />
+          <img src="img/ETEFA_main/tree_wh.svg" class="banner_tree" />
+        </div>
+        <div class="Banner_car">
+          <img src="img/ETEFA_main/bus_wh.svg" class="banner_car d-block" />
+        </div>
+        <div class="Banner_stop">
+          <img src="img/ETEFA_main/stop_wh.svg" class="banner_stop" />
+        </div>
+
+        <svg
+          class="c-dashed-line mx-auto"
+          width="1540"
+          height="60"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <path id="c-dashed-line"" d=" M0 20 L1640 20" />
+          </defs>
+
+          <!-- A dashed white line that sits on top of the solid green line -->
+          <use class="c-dashed-line__dash" xlink:href="#c-dashed-line" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Road -->
+    <section id="Road" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <!-- sec01 ------>
+          <div class="sec01 row">
+            <div
+              class="article article01 col-lg-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="500"
+            >
+              <h5><img src="img/ETEFA_main/decor_star.svg" class="road_decor" />車輛管理</h5>
+              <p>能在第一時間掌握車輛的狀況。 有助於車輛發生狀況時第一時間的維修以及管理。</p>
+              <button class="use_case">Use Case ></button>
+            </div>
+            <div
+              class="pic pic01"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+     
+            >
+              <div class="pic01_all">
+                <img src="img/ETEFA_main/road/Illustration-35.svg" class="pic01_fix" />
+              </div>
+
+              <img src="img/ETEFA_main/road/Illustration-38.svg" class="mb_pic01" />
+            </div>
+          </div>
+
+          <!-- sec02 ------>
+          <div class="sec02 row">
+            <div
+              class="article article02 col-lg-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h5><img src="img/ETEFA_main/decor_star.svg" class="road_decor" />行程管理</h5>
+              <p>
+                透過智能營運中心，可以掌握實際車況。做到即時的派車調度、緊急救援，以及站牌預告。
+              </p>
+              <button class="use_case">Use Case ></button>
+            </div>
+            <div
+              class="pic pic02"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            
+            >
+              <div class="pic02_all">
+                <img src="img/ETEFA_main/road/Illustration-36.svg" class="ioc_house" />
+              </div>
+              <img src="img/ETEFA_main/road/Illustration-39.svg" class="mb_pic02" />
+            </div>
+          </div>
+
+          <!-- sec03 ------>
+          <div class="sec03 row">
+            <div
+              class="article article03 col-lg-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            
+            >
+              <h5><img src="img/ETEFA_main/decor_star.svg" class="road_decor" />駕駛管理</h5>
+              <p>即時雙向的駕駛控制台能掌握駕駛狀態以及行車資訊,以提高整體效率以及安全駕駛技能。</p>
+              <button class="use_case">Use Case ></button>
+            </div>
+            <div
+              class="pic pic03"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src="img/ETEFA_main/road/Illustration-37.svg" class="driver_all" />
+              <img src="img/ETEFA_main/road/Illustration-40.svg" class="mb_pic03" />
+            </div>
+          </div>
+
+          <!-- Road_star -->
+
+          <svg
+            class="Road_all"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="1748"
+            height="1600"
+            viewBox="0 150 1748 1923"
+            class="mx-auto"
+          >
+            <defs>
+              <clipPath id="clip-line01_road">
+                <rect width="2208" height="2463" />
+              </clipPath>
+            </defs>
+            <g id="line01_road" clip-path="url(#clip-line01_road)">
+              <!-- Road_Light -->
+              <g id="line02_road" clip-path="url(#clip-line02_road)">
+                <path
+                  id="road_line"
+                  class="path02"
+                  d="M2394.59,64.734V297.8c0,147.855-124.48,267.714-278.031,267.714H1213.271c-153.553,0-278.031,119.859-278.031,267.713V852.61c0,147.855,124.478,267.713,278.031,267.713h966.19c153.551,0,278.031,119.859,278.031,267.713h0c0,147.855-124.48,232.326-278.031,232.326l-938.151-12.676c-85.869-.7-193,59.157-224.853,119.628-56.627,107.5-49.8,245.216-49.8,245.216"
+                  transform="translate(-980.366 -49.234) scale(1.1)"
+                  fill="none"
+                  stroke="#3bd1d6"
+                  stroke-linecap="round"
+                  stroke-miterlimit="50"
+                  stroke-width="6"
+                  opacity="0"
+                  stroke-dashoffset="0"
+                />
+              </g>
+
+              <!-- Road_dark -->
+
+              <defs>
+                <clipPath id="clip-line01_road02">
+                  <rect width="2208" height="2518" />
+                </clipPath>
+              </defs>
+              <g
+                id="line01_road02"
+                clip-path="url(#clip-line01_road02)"
+                transform="translate(-100 0) scale(0.9)"
+              >
+                <path
+                  id="road_line"
+                  d="M2733.306,101.1V344.2c0,182.033-153.372,329.6-342.562,329.6H1277.8c-189.193,0-342.563,147.565-342.563,329.6v23.862c0,182.033,153.369,329.6,342.563,329.6H2468.246c189.19,0,342.562,147.565,342.562,329.6h0c0,182.033-153.372,329.6-342.562,329.6l-1190.444.51c-189.193,0-342.562,147.568-342.562,329.6V2529.6"
+                  transform="translate(-799.716 -75.605)"
+                  fill="none"
+                  stroke="#11486d"
+                  stroke-miterlimit="10"
+                  stroke-width="6"
+                  class="path"
+                />
+                <g
+                  id="Group_3167"
+                  data-name="Group 3167"
+                  transform="matrix(0.998, 0.07, -0.07, 0.998, -725.075, 615.233)"
+                >
+                  <path
+                    id="Path_84983"
+                    data-name="Path 84983"
+                    d="M962.462,524.691a114.208,114.208,0,0,0,48.053,25.7"
+                    fill="none"
+                    stroke="#11486d"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="6"
+                  />
+                  <path
+                    id="Path_84984"
+                    data-name="Path 84984"
+                    d="M946.331,506.8a115.314,115.314,0,0,0,7.408,9.158"
+                    fill="none"
+                    stroke="#11486d"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="6"
+                  />
+                </g>
+                <g
+                  id="Group_3168"
+                  data-name="Group 3168"
+                  transform="translate(2024.863 1845.641) rotate(159)"
+                >
+                  <path
+                    id="Path_84983-2"
+                    data-name="Path 84983"
+                    d="M0,25.7A114.208,114.208,0,0,1,48.053,0"
+                    transform="translate(16.131)"
+                    fill="none"
+                    stroke="#11486d"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="6"
+                  />
+                  <path
+                    id="Path_84984-2"
+                    data-name="Path 84984"
+                    d="M0,9.158A115.329,115.329,0,0,1,7.408,0"
+                    transform="translate(0 34.431)"
+                    fill="none"
+                    stroke="#11486d"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="6"
+                  />
+                </g>
+                <g id="Group_3169" data-name="Group 3169" transform="translate(247 -857)">
+                  <rect
+                    id="Rectangle_668"
+                    data-name="Rectangle 668"
+                    width="8"
+                    height="17"
+                    rx="4"
+                    transform="translate(1727 1243)"
+                    fill="#11486d"
+                  />
+                  <rect
+                    id="Rectangle_669"
+                    data-name="Rectangle 669"
+                    width="8"
+                    height="31"
+                    rx="4"
+                    transform="translate(1740 1236)"
+                    fill="#11486d"
+                  />
+                </g>
+                <g
+                  id="Ellipse_134"
+                  data-name="Ellipse 134"
+                  transform="translate(1915 17)"
+                  fill="#fff"
+                  stroke="#11486d"
+                  stroke-width="6"
+                >
+                  <circle cx="18.5" cy="18.5" r="18.5" stroke="none" />
+                  <circle cx="18.5" cy="18.5" r="15.5" fill="none" />
+                </g>
+                <g
+                  id="Ellipse_135"
+                  data-name="Ellipse 135"
+                  transform="translate(117 2429)"
+                  fill="#fff"
+                  stroke="#11486d"
+                  stroke-width="6"
+                >
+                  <circle cx="18.5" cy="18.5" r="18.5" stroke="none" />
+                  <circle cx="18.5" cy="18.5" r="15.5" fill="none" />
+                </g>
+                <g id="Union_1" data-name="Union 1" transform="translate(8245 2242)" fill="#fff">
+                  <path
+                    d="M -6306.50048828125 -1846.999267578125 L -6344.50048828125 -1846.999267578125 C -6348.640625 -1846.999267578125 -6352.53271484375 -1848.611572265625 -6355.46044921875 -1851.539306640625 C -6358.38818359375 -1854.467041015625 -6360.00048828125 -1858.359375 -6360.00048828125 -1862.499389648438 C -6360.00048828125 -1866.58154296875 -6358.42724609375 -1870.4345703125 -6355.57080078125 -1873.348876953125 C -6352.71826171875 -1876.258911132812 -6348.90673828125 -1877.909301757812 -6344.837890625 -1877.995727539062 L -6342.1787109375 -1878.052368164062 L -6341.91650390625 -1880.699340820312 C -6341.5029296875 -1884.871704101562 -6339.56005859375 -1888.732543945312 -6336.44482421875 -1891.570556640625 C -6333.3095703125 -1894.4267578125 -6329.24560546875 -1895.999755859375 -6325.00048828125 -1895.999755859375 C -6320.748046875 -1895.999755859375 -6316.67822265625 -1894.422119140625 -6313.54052734375 -1891.557373046875 C -6310.42236328125 -1888.710571289062 -6308.48291015625 -1884.839721679688 -6308.0791015625 -1880.658203125 L -6307.8359375 -1878.14453125 L -6305.31787109375 -1877.955200195312 C -6301.4326171875 -1877.6630859375 -6297.82373046875 -1875.925659179688 -6295.15673828125 -1873.06298828125 C -6292.4765625 -1870.186279296875 -6291.00048828125 -1866.434692382812 -6291.00048828125 -1862.499389648438 C -6291.00048828125 -1858.359252929688 -6292.61279296875 -1854.466918945312 -6295.54052734375 -1851.539306640625 C -6298.4677734375 -1848.611572265625 -6302.3603515625 -1846.999267578125 -6306.50048828125 -1846.999267578125 Z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M -6306.50048828125 -1849.999267578125 C -6299.60791015625 -1849.999267578125 -6294.00048828125 -1855.606811523438 -6294.00048828125 -1862.499389648438 C -6294.00048828125 -1869.002075195312 -6299.0703125 -1874.47705078125 -6305.54248046875 -1874.963623046875 L -6310.5791015625 -1875.34228515625 L -6311.06494140625 -1880.369750976562 C -6311.7607421875 -1887.570068359375 -6317.75146484375 -1892.999755859375 -6325.00048828125 -1892.999755859375 C -6332.23095703125 -1892.999755859375 -6338.2197265625 -1887.584594726562 -6338.93115234375 -1880.403564453125 L -6339.45556640625 -1875.109619140625 L -6344.7744140625 -1874.996459960938 C -6351.515625 -1874.85302734375 -6357.00048828125 -1869.246948242188 -6357.00048828125 -1862.499389648438 C -6357.00048828125 -1855.606811523438 -6351.39306640625 -1849.999267578125 -6344.50048828125 -1849.999267578125 L -6306.50048828125 -1849.999267578125 M -6306.50048828125 -1843.999267578125 L -6344.50048828125 -1843.999267578125 C -6354.71728515625 -1843.999267578125 -6363.00048828125 -1852.282470703125 -6363.00048828125 -1862.499389648438 C -6363.00048828125 -1872.583862304688 -6354.93359375 -1880.78173828125 -6344.90185546875 -1880.9951171875 C -6343.900390625 -1891.103881835938 -6335.37255859375 -1898.999755859375 -6325.00048828125 -1898.999755859375 C -6314.611328125 -1898.999755859375 -6306.07177734375 -1891.0791015625 -6305.0927734375 -1880.94677734375 C -6295.533203125 -1880.22802734375 -6288.00048828125 -1872.24462890625 -6288.00048828125 -1862.499389648438 C -6288.00048828125 -1852.282470703125 -6296.283203125 -1843.999267578125 -6306.50048828125 -1843.999267578125 Z"
+                    stroke="none"
+                    fill="#11486d"
+                  />
+                </g>
+                <g id="Union_2" data-name="Union 2" transform="translate(8337 3475)" fill="#fff">
+                  <path
+                    d="M -6306.50048828125 -1846.999267578125 L -6344.50048828125 -1846.999267578125 C -6348.640625 -1846.999267578125 -6352.53271484375 -1848.611572265625 -6355.46044921875 -1851.539306640625 C -6358.38818359375 -1854.467041015625 -6360.00048828125 -1858.359375 -6360.00048828125 -1862.499389648438 C -6360.00048828125 -1866.58154296875 -6358.42724609375 -1870.4345703125 -6355.57080078125 -1873.348876953125 C -6352.71826171875 -1876.258911132812 -6348.90673828125 -1877.909301757812 -6344.837890625 -1877.995727539062 L -6342.1787109375 -1878.052368164062 L -6341.91650390625 -1880.699340820312 C -6341.5029296875 -1884.871704101562 -6339.56005859375 -1888.732543945312 -6336.44482421875 -1891.570556640625 C -6333.3095703125 -1894.4267578125 -6329.24560546875 -1895.999755859375 -6325.00048828125 -1895.999755859375 C -6320.748046875 -1895.999755859375 -6316.67822265625 -1894.422119140625 -6313.54052734375 -1891.557373046875 C -6310.42236328125 -1888.710571289062 -6308.48291015625 -1884.839721679688 -6308.0791015625 -1880.658203125 L -6307.8359375 -1878.14453125 L -6305.31787109375 -1877.955200195312 C -6301.4326171875 -1877.6630859375 -6297.82373046875 -1875.925659179688 -6295.15673828125 -1873.06298828125 C -6292.4765625 -1870.186279296875 -6291.00048828125 -1866.434692382812 -6291.00048828125 -1862.499389648438 C -6291.00048828125 -1858.359252929688 -6292.61279296875 -1854.466918945312 -6295.54052734375 -1851.539306640625 C -6298.4677734375 -1848.611572265625 -6302.3603515625 -1846.999267578125 -6306.50048828125 -1846.999267578125 Z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M -6306.50048828125 -1849.999267578125 C -6299.60791015625 -1849.999267578125 -6294.00048828125 -1855.606811523438 -6294.00048828125 -1862.499389648438 C -6294.00048828125 -1869.002075195312 -6299.0703125 -1874.47705078125 -6305.54248046875 -1874.963623046875 L -6310.5791015625 -1875.34228515625 L -6311.06494140625 -1880.369750976562 C -6311.7607421875 -1887.570068359375 -6317.75146484375 -1892.999755859375 -6325.00048828125 -1892.999755859375 C -6332.23095703125 -1892.999755859375 -6338.2197265625 -1887.584594726562 -6338.93115234375 -1880.403564453125 L -6339.45556640625 -1875.109619140625 L -6344.7744140625 -1874.996459960938 C -6351.515625 -1874.85302734375 -6357.00048828125 -1869.246948242188 -6357.00048828125 -1862.499389648438 C -6357.00048828125 -1855.606811523438 -6351.39306640625 -1849.999267578125 -6344.50048828125 -1849.999267578125 L -6306.50048828125 -1849.999267578125 M -6306.50048828125 -1843.999267578125 L -6344.50048828125 -1843.999267578125 C -6354.71728515625 -1843.999267578125 -6363.00048828125 -1852.282470703125 -6363.00048828125 -1862.499389648438 C -6363.00048828125 -1872.583862304688 -6354.93359375 -1880.78173828125 -6344.90185546875 -1880.9951171875 C -6343.900390625 -1891.103881835938 -6335.37255859375 -1898.999755859375 -6325.00048828125 -1898.999755859375 C -6314.611328125 -1898.999755859375 -6306.07177734375 -1891.0791015625 -6305.0927734375 -1880.94677734375 C -6295.533203125 -1880.22802734375 -6288.00048828125 -1872.24462890625 -6288.00048828125 -1862.499389648438 C -6288.00048828125 -1852.282470703125 -6296.283203125 -1843.999267578125 -6306.50048828125 -1843.999267578125 Z"
+                    stroke="none"
+                    fill="#11486d"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="Benefits">
+      <div class="container">
+        <h6>BENEFITS</h6>
+        <div class="row">
+          <div
+            class="col-lg-6 p-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="500"
+          >
+            <div class="draw01">
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud01" />
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud02" />
+              <svg
+                id="control_center"
+                data-name="control_center"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 226.77 226.77"
+              >
+                <defs>
+                  <style>
+                    .bene-cls-1 {
+                      fill: #d5efef;
+                    }
+
+                    .bene-cls-2 {
+                      fill: #11486d;
+                    }
+
+                    .bene-cls-3 {
+                      fill: #f7f8f8;
+                      stroke-width: 5px;
+                    }
+
+                    .bene-cls-3,
+                    .bene-cls-4,
+                    .bene-cls-5,
+                    .bene-cls-7,
+                    .bene-cls-8 {
+                      stroke: #11486d;
+                      stroke-miterlimit: 10;
+                    }
+
+                    .bene-cls-3,
+                    .bene-cls-4,
+                    .bene-cls-7,
+                    .bene-cls-8 {
+                      stroke-linecap: round;
+                    }
+
+                    .bene-cls-4 {
+                      fill: #28aeb4;
+                    }
+
+                    .bene-cls-4,
+                    .bene-cls-5,
+                    .bene-cls-7,
+                    .bene-cls-8 {
+                      stroke-width: 3px;
+                    }
+
+                    .bene-cls-5 {
+                      fill: #fff;
+                    }
+
+                    .bene-cls-6 {
+                      fill: #bee2e4;
+                    }
+
+                    .bene-cls-7 {
+                      fill: none;
+                    }
+
+                    .bene-cls-8 {
+                      fill: #f4c467;
+                    }
+
+                    .bene-cls-9 {
+                      fill: #dcdddd;
+                    }
+                  </style>
+                </defs>
+                <circle class="bene-cls-1" cx="117.12" cy="109.52" r="90.77" />
+                <rect
+                  class="bene-cls-2"
+                  x="22.68"
+                  y="31.69"
+                  width="3.91"
+                  height="12.12"
+                  rx="1.71"
+                  transform="translate(-0.19 0.12) rotate(-0.29)"
+                />
+                <rect
+                  class="bene-cls-2"
+                  x="29.38"
+                  y="34.01"
+                  width="3.91"
+                  height="7.42"
+                  rx="1.71"
+                  transform="translate(-0.19 0.16) rotate(-0.29)"
+                />
+                <rect
+                  class="bene-cls-2"
+                  x="210.38"
+                  y="148.08"
+                  width="3.91"
+                  height="12.12"
+                  rx="1.71"
+                  transform="translate(425.44 307.22) rotate(179.71)"
+                />
+                <rect
+                  class="bene-cls-2"
+                  x="203.68"
+                  y="150.46"
+                  width="3.91"
+                  height="7.42"
+                  rx="1.71"
+                  transform="translate(412.04 307.32) rotate(179.71)"
+                />
+                <path
+                  class="bene-cls-3"
+                  d="M70.77,43.71l80.48-.41,14.88-.07h2.75a2.94,2.94,0,0,1,3,2.92l.33,66.53a2.94,2.94,0,0,1-2.92,3l-125.39.62a2.93,2.93,0,0,1-3-2.92L40.57,48"
+                />
+                <path class="bene-cls-3" d="M50.27,43.81l8.5-.05" />
+                <rect
+                  class="bene-cls-4"
+                  x="136.48"
+                  y="137.94"
+                  width="8.32"
+                  height="24.37"
+                  transform="translate(-0.75 0.7) rotate(-0.29)"
+                />
+                <rect
+                  class="bene-cls-4"
+                  x="137.3"
+                  y="143.73"
+                  width="7.26"
+                  height="33.66"
+                  transform="translate(300.78 18.83) rotate(89.71)"
+                />
+                <path
+                  class="bene-cls-4"
+                  d="M139.91,100l34.76.12a2.25,2.25,0,0,1,2.23,2.25l-.12,41.81a2.23,2.23,0,0,1-2.24,2.23l-67.73-.19a2.23,2.23,0,0,1-2.23-2.24l.12-41.82a2.24,2.24,0,0,1,2.24-2.23l8.67,0"
+                />
+                <rect
+                  class="bene-cls-5"
+                  x="111.58"
+                  y="106.37"
+                  width="58.32"
+                  height="33.53"
+                  rx="4.25"
+                  transform="translate(0.35 -0.4) rotate(0.16)"
+                />
+                <rect
+                  class="bene-cls-6"
+                  x="128.9"
+                  y="111.54"
+                  width="20.19"
+                  height="25.74"
+                  transform="translate(0.35 -0.39) rotate(0.16)"
+                />
+                <rect
+                  class="bene-cls-6"
+                  x="153.8"
+                  y="111.6"
+                  width="9.97"
+                  height="25.74"
+                  transform="translate(0.35 -0.45) rotate(0.16)"
+                />
+                <rect
+                  class="bene-cls-6"
+                  x="117.72"
+                  y="111.49"
+                  width="6.26"
+                  height="25.74"
+                  transform="matrix(1, 0, 0, 1, 0.35, -0.34)"
+                />
+                <path class="bene-cls-4" d="M122.84,99.81h3.78" />
+                <circle class="bene-cls-2" cx="133.32" cy="99.9" r="1.78" />
+                <g id="arrow01">
+                  <path
+                    class="bene-cls-7 draw-arrow"
+                    d="M189.41,116.48c9.69-11,9.12-27.29-1.27-36.47"
+                  />
+                  <path
+                    class="bene-cls-7 draw-arrow02"
+                    d="M188.27,109.86l.55,5.87a1.09,1.09,0,0,0,1.19,1l6.66-.67"
+                  />
+                </g>
+                <g id="arrow02">
+                  <path
+                    class="bene-cls-7 draw-arrow"
+                    d="M94.29,148.93c-16.51,2.17-31.53-8.72-33.59-24.35"
+                  />
+                  <path
+                    class="bene-cls-7 draw-arrow02"
+                    d="M88.77,143.65,94,147.9a1.23,1.23,0,0,1,.16,1.74l-4.85,5.85"
+                  />
+                </g>
+                <line class="bene-cls-7" x1="42.61" y1="166.92" x2="203.74" y2="166.11" />
+                <line class="bene-cls-7" x1="94.99" y1="181.4" x2="159.07" y2="181.08" />
+                <g id="alert">
+                  <circle class="alert bene-cls-8" cx="164.98" cy="50.57" r="21.88" />
+                  <path
+                    class="bene-cls-2"
+                    d="M164.27,55.65l-2.76-12a4,4,0,0,1,3.83-4.85h0a4.08,4.08,0,0,1,4,4.95l-2.62,11.88A1.26,1.26,0,0,1,164.27,55.65Z"
+                  />
+                  <circle class="bene-cls-2" cx="165.52" cy="62.43" r="2.94" />
+                </g>
+                <rect
+                  class="bene-cls-9"
+                  x="47.75"
+                  y="52.75"
+                  width="20.64"
+                  height="55.22"
+                  rx="3.29"
+                  transform="translate(-0.4 0.29) rotate(-0.29)"
+                />
+                <rect
+                  class="bene-cls-2"
+                  x="60.54"
+                  y="80.33"
+                  width="8.31"
+                  height="25.77"
+                  transform="translate(-0.46 0.32) rotate(-0.29)"
+                />
+                <rect
+                  class="bene-cls-2"
+                  x="71.77"
+                  y="75.77"
+                  width="8.31"
+                  height="30.27"
+                  transform="translate(-0.45 0.38) rotate(-0.29)"
+                />
+                <rect
+                  class="bene-cls-2"
+                  x="84.14"
+                  y="68.06"
+                  width="8.31"
+                  height="37.91"
+                  transform="translate(-0.43 0.44) rotate(-0.29)"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit_title">控制中心</h3>
+            <p class="benefit_content mt-1">全面監控管理，掌握最新狀況。</p>
+          </div>
+          <div
+            class="col-lg-6 p-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="500"
+            data-aos-delay="300"
+          >
+            <div class="draw02">
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud01" />
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud02" />
+              <svg
+                id="navigation"
+                data-name="navigation"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 226.77 226.77"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #bee2e4;
+                      opacity: 0.6;
+                    }
+
+                    .cls-14,
+                    .cls-2 {
+                      fill: #11486d;
+                    }
+
+                    .cls-15,
+                    .cls-17,
+                    .cls-18,
+                    .cls-20,
+                    .cls-3,
+                    .cls-6 {
+                      fill: none;
+                    }
+
+                    .cls-10,
+                    .cls-11,
+                    .cls-12,
+                    .cls-13,
+                    .cls-14,
+                    .cls-15,
+                    .cls-16,
+                    .cls-18,
+                    .cls-20,
+                    .cls-3,
+                    .cls-4,
+                    .cls-9 {
+                      stroke: #11486d;
+                    }
+
+                    .cls-10,
+                    .cls-11,
+                    .cls-12,
+                    .cls-13,
+                    .cls-14,
+                    .cls-15,
+                    .cls-16,
+                    .cls-17,
+                    .cls-18,
+                    .cls-20,
+                    .cls-3,
+                    .cls-4,
+                    .cls-6,
+                    .cls-9 {
+                      stroke-linecap: round;
+                      stroke-miterlimit: 10;
+                    }
+
+                    .cls-11,
+                    .cls-14,
+                    .cls-16,
+                    .cls-17,
+                    .cls-3,
+                    .cls-9 {
+                      stroke-width: 3px;
+                    }
+
+                    .cls-13,
+                    .cls-4,
+                    .cls-8 {
+                      fill: #f7f8f8;
+                    }
+
+                    .cls-20,
+                    .cls-4 {
+                      stroke-width: 5px;
+                    }
+
+                    .cls-5 {
+                      fill: #dcdddd;
+                      opacity: 0.65;
+                    }
+
+                    .cls-6 {
+                      stroke: #bee2e4;
+                      stroke-width: 4px;
+                    }
+
+                    .cls-7 {
+                      fill: #3381b7;
+                    }
+
+                    .cls-10,
+                    .cls-9 {
+                      fill: #595757;
+                    }
+
+                    .cls-10,
+                    .cls-12,
+                    .cls-13,
+                    .cls-15,
+                    .cls-18 {
+                      stroke-width: 2px;
+                    }
+
+                    .cls-11 {
+                      fill: #727171;
+                    }
+
+                    .cls-12,
+                    .cls-16 {
+                      fill: #28aeb4;
+                    }
+
+                    .cls-15,
+                    .cls-20 {
+                      opacity: 0.37;
+                    }
+
+                    .cls-17 {
+                      stroke: #dcdddd;
+                    }
+
+                    .cls-19 {
+                      fill: #f4c467;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" cx="115.9" cy="109.36" r="90.77" />
+                <rect
+                  class="cls-2"
+                  x="196.81"
+                  y="139.53"
+                  width="3.91"
+                  height="12.12"
+                  rx="1.71"
+                  transform="translate(397.52 291.17) rotate(180)"
+                />
+                <rect
+                  class="cls-2"
+                  x="190.11"
+                  y="141.88"
+                  width="3.91"
+                  height="7.42"
+                  rx="1.71"
+                  transform="translate(384.12 291.17) rotate(-180)"
+                />
+                <line class="cls-3" x1="41.1" y1="166.39" x2="202.24" y2="166.39" />
+                <line class="cls-3" x1="93.41" y1="181.13" x2="157.49" y2="181.13" />
+                <rect
+                  class="cls-2"
+                  x="6.78"
+                  y="72.31"
+                  width="3.5"
+                  height="10.85"
+                  rx="1.18"
+                  transform="translate(-21.59 5.57) rotate(-16.39)"
+                />
+                <rect
+                  class="cls-2"
+                  x="12.54"
+                  y="72.72"
+                  width="3.5"
+                  height="6.64"
+                  rx="1.18"
+                  transform="matrix(0.96, -0.28, 0.28, 0.96, -20.88, 7.12)"
+                />
+                <path
+                  class="cls-4"
+                  d="M41.72,73.72,61.34,68l17.3-5.09,15.09-4.44,9.61-2.83,1.78-.52a2,2,0,0,1,2.45,1.34l12.65,43a2,2,0,0,1-1.34,2.46l-81,23.83a2,2,0,0,1-2.46-1.34L23,82.14"
+                />
+                <path class="cls-4" d="M28.47,77.61,34,76" />
+                <rect
+                  class="cls-5"
+                  x="33.26"
+                  y="80.24"
+                  width="9.86"
+                  height="38.77"
+                  rx="3.29"
+                  transform="translate(-26.56 14.82) rotate(-16.39)"
+                />
+                <line class="cls-3" x1="55.55" y1="71.59" x2="92.11" y2="108.34" />
+                <line class="cls-3" x1="86.92" y1="76.95" x2="113.39" y2="103.42" />
+                <line class="cls-3" x1="40.35" y1="122.99" x2="107.57" y2="56.41" />
+                <line class="cls-3" x1="89.86" y1="105.38" x2="102.43" y2="92.81" />
+                <line class="cls-3" x1="98.18" y1="86.79" x2="110.75" y2="74.22" />
+                <line class="cls-3" x1="61.4" y1="78.62" x2="32" y2="108.02" />
+                <line class="cls-3" x1="48.05" y1="94.67" x2="69.41" y2="116.03" />
+                <polyline
+                  class="cls-6"
+                  points="35.39 104.97 46.7 93.32 58.45 105.07 73.83 89.97 89.2 105.98 102.6 92.63 97.39 87.42 109.82 74.91"
+                />
+                <circle class="cls-7" cx="86.58" cy="77.29" r="4.32" />
+                <path
+                  class="cls-8"
+                  d="M86.43,78.29l-.53-2.37a.78.78,0,0,1,.76-1h0a.8.8,0,0,1,.79,1l-.53,2.34A.25.25,0,0,1,86.43,78.29Z"
+                />
+                <circle class="cls-8" cx="86.67" cy="79.63" r="0.58" />
+                <path
+                  class="cls-7"
+                  d="M59.87,98.51l7.71-3.09a.57.57,0,0,1,.74.74l-3.09,7.72a.56.56,0,0,1-1.06,0l-1-2.93a.56.56,0,0,0-.36-.36l-2.93-1A.57.57,0,0,1,59.87,98.51Z"
+                />
+                <g id="wheel">
+                  <path
+                    class="cls-9"
+                    d="M127.51,103l-20.29,1.32a47.17,47.17,0,0,0-10.06,1.78h0A46.89,46.89,0,0,0,87.73,110l-23.1,10.58,5.9,11.63L89,124.55c4.19-1.22,8.49.92,9.62,4.77l4.3,14.74,9.88-2.89-4.3-14.73c-1.13-3.86,1.35-8,5.54-9.2l15.45-4.51Z"
+                  />
+                  <path
+                    class="cls-10"
+                    d="M96.29,72.45a41,41,0,1,0,41,41A41,41,0,0,0,96.29,72.45Zm0,73.43a32.46,32.46,0,1,1,32.46-32.45A32.45,32.45,0,0,1,96.29,145.88Z"
+                  />
+                  <circle class="cls-11" cx="99.68" cy="116.95" r="4.6" />
+                </g>
+                <path
+                  class="cls-12"
+                  d="M157,113.86l-39.65,7.24S103.62,142,99.52,151c-1.28,2.78-6.35,8.75-8.23,13.63h92c-.24-3.91-2.55-8.19-3.67-11.4a141.57,141.57,0,0,0-9.65-21.42C168.27,128.75,161.45,113.07,157,113.86Z"
+                />
+                <path
+                  class="cls-13"
+                  d="M123.37,51.47c-3.65,1.83-7.63,5.73-8.59,9.74a59.07,59.07,0,0,0-1.19,7.36c-.16,1.55.09,3.5-.72,4.9s-2.73,1.78-4.25,2.38c-1.68.66-4.66,2.52-4.07,4.73.43,1.57,2.52,2.14,3.79,2.9a9.73,9.73,0,0,1,3.76,3.38c1.87,3.29.12,9,3.9,11.15a6.23,6.23,0,0,0,2.56.63,114.17,114.17,0,0,0,14.91-.14c.54,0,1.19,0,1.48.47a1.48,1.48,0,0,1,.15.93,64.76,64.76,0,0,1-1.56,11.51,3.37,3.37,0,0,1-1.49,2.5c5.19-3.86,15.94-4.91,22.3-6.06.05-2.38-1.61-4.68-.87-7.21,2.15-7.35,5.61-8.56,8.58-13.08a27.19,27.19,0,0,0,3.87-8.07,26.72,26.72,0,0,0,0-11.33c-.57-3.19-1-7.09-2.92-9.83a22.76,22.76,0,0,0-15.31-10.15c-5.36-.91-10.85-.22-16.18.82a33.87,33.87,0,0,0-7.79,2.29Z"
+                />
+                <ellipse
+                  class="cls-2"
+                  cx="127.03"
+                  cy="71.39"
+                  rx="4.05"
+                  ry="1.54"
+                  transform="translate(38.46 187.1) rotate(-81.9)"
+                />
+                <path
+                  class="cls-14"
+                  d="M131.45,40c-2.28,1.44-5.32.69-7.85,1a13,13,0,0,0-6.89,3.19c-4.35,3.95-3.82,10.59-1.36,15.6a2.43,2.43,0,0,0,3.52,1c1.68-1.11,2.47-3.35,4.9-4.79,3.58-2.11,8.68-3,9.7-2.73,3.47.94,7.94,4.91,11,8.94,1.74,2.34,5.3,1.75,7.79.32,8.6-4.95,9.21,5.11,8.46,11.2-.38,3.08-7.43,23.31-6.29,23.7,7,2.4,19.12-9,21-20.67,1.28-7.88,1.82-20.86-3.6-27.57-3.5-4.35-9.13-6.67-14.19-8.61C149.71,37.48,139.16,35.1,131.45,40Z"
+                />
+                <path
+                  class="cls-12"
+                  d="M132.09,39.44a38.78,38.78,0,0,0-3.69-4.13A5.19,5.19,0,0,1,127,33.22a3.52,3.52,0,0,1,.63-2.86c3.81-5.54,12.63-7.76,18.91-8.35a39.71,39.71,0,0,1,25.2,6.68c9.91,6.48,19.1,16.15,15.41,28.87-1,3.6-3.14,7.91-6.11,10.3-4.42,3.54-6.84.38-9.17-3.57-6.21-10.54-23.83-21.47-36.44-20.68-1.93.13-1.95-1.49-2.57-2.83A10,10,0,0,0,132.09,39.44Z"
+                />
+                <path
+                  class="cls-12"
+                  d="M133.2,39A51.11,51.11,0,0,1,157.92,41c7,2.4,16.54,6.86,20.13,13.86"
+                />
+                <path
+                  class="cls-15"
+                  d="M132,37.18c11.13-3.24,23.7-1.15,33.93,4a33.84,33.84,0,0,1,13.7,12.13"
+                />
+                <path
+                  class="cls-16"
+                  d="M113,126.13c.1-.57,8.15-14.1,13.29-16.12s18-7.79,24.67-6.78a8.87,8.87,0,0,1,7.8,8.51c.09,1.79-15.51,5.47-16,6s-29.95,9.57-29.95,9.57"
+                />
+                <path class="cls-20" d="M133.59,134c2.72,10.35-11.37,20.44-23.77,28.31" />
+
+                <g id="arm">
+                  <path
+                    class="cls-12"
+                    d="M91.17,140.44a12.88,12.88,0,0,0,4.3.2c3.76-.47,7.12-2.55,10.1-4.88s5.73-5,9-6.95,7.18-3.14,10.84-2.19c5.61,1.46,7.48,7.52,5.89,12.61-1.42,4.52-5.49,7.55-8.88,10.58-8,7.1-16.39,14.94-27.7,14.78a44.54,44.54,0,0,1-14.85-3.19c-5.53-2.06-10.92-4.79-15.16-8.9-3.41-3.31-8.35-10.15-7.22-15.32,1-4.53,6.87-4.94,10.56-5.61,1.89-.34,3.8-.67,5.66-1.16C79,129,79.54,132.82,83,136A17.56,17.56,0,0,0,91.17,140.44Z"
+                  />
+                  <path
+                    class="cls-13"
+                    d="M63.5,110.93h0A2,2,0,0,1,61.33,112l-5.26-1-1.75-1.48h0A6.64,6.64,0,0,0,52.83,114l.18,4.48a5.3,5.3,0,0,0,2,3.91l2.41,2,9-.91L67.58,121a7,7,0,0,0,.4-5.2l-1-3.3a2.37,2.37,0,0,0-2.39-1.65Z"
+                  />
+                  <path
+                    class="cls-12"
+                    d="M57.19,126.23a74.82,74.82,0,0,1,7.38-2.49c3.5-.93,5.36-1.4,7.23-2.1,1.55-.58,2.75,1.65,3.77,2.53a11.79,11.79,0,0,1,2.75,3.77,1.26,1.26,0,0,1,.09.56,1.61,1.61,0,0,1-1.31,1.58c-1.78.35-3.55.73-5.31,1.17a20.32,20.32,0,0,0-6.05,2.05,23.61,23.61,0,0,0-5.27,3.92,9.38,9.38,0,0,0-.78,1,2.71,2.71,0,0,1-4.92-.95c-.09-.44-.18-.88-.27-1.3a32,32,0,0,1-.76-7.17,1.49,1.49,0,0,1,.06-.52C54.07,127.44,56.43,126.53,57.19,126.23Z"
+                  />
+                </g>
+                <path class="cls-17" d="M138.29,95.78a19.73,19.73,0,0,0,13.15-7.21" />
+                <path
+                  class="cls-18"
+                  d="M148.49,78c.93-1.07,2.76-.39,3.23,1a3.83,3.83,0,0,1-1.25,3.93,6.37,6.37,0,0,1-3.77,1.28"
+                />
+                <path
+                  class="cls-18"
+                  d="M120.31,87.88a2.77,2.77,0,0,0,2.33.69,9.31,9.31,0,0,0,5.58-2.4"
+                />
+                <circle id="alert" class="cls-19" cx="60.97" cy="79.05" r="5.01" />
+                <path
+                  class="cls-8"
+                  d="M60.8,80.21l-.62-2.75a.9.9,0,0,1,.88-1.1h0A.94.94,0,0,1,62,77.5l-.62,2.71A.29.29,0,0,1,60.8,80.21Z"
+                />
+                <circle class="cls-8" cx="61.08" cy="81.77" r="0.67" />
+                <path
+                  class="cls-7"
+                  d="M33.9,98.46,45.09,94a.83.83,0,0,1,1.07,1.08l-4.47,11.18a.82.82,0,0,1-1.55,0L38.72,102a.83.83,0,0,0-.52-.53L34,100A.83.83,0,0,1,33.9,98.46Z"
+                />
+                <path
+                  class="cls-20"
+                  d="M127.05,124.44a235.34,235.34,0,0,0,27.84-7.51c3.62-1.22,5.6,3.94,6.87,6.4a116.53,116.53,0,0,0,11.78,18.34"
+                />
+              </svg>
+            </div>
+            <h3 class="benefit_title">路況掌握</h3>
+            <p class="benefit_content mt-1">第一時間了解路況，針對路線緊急調度，確保行駛安全。</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-6 p-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="500"
+            data-aos-delay="300"
+          >
+            <div class="draw03">
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud01" />
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud02" />
+              <img src="img/ETEFA_main/benefits/benefit-10.svg" alt="" />
+            </div>
+            <h3 class="benefit_title">駕駛檢測</h3>
+            <p class="benefit_content mt-1">透過駕駛疲勞檢測以及酒精檢測，讓駕駛更有安全性。</p>
+          </div>
+          <div
+            class="col-lg-6 p-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="500"
+            data-aos-delay="600"
+          >
+            <div class="draw04">
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud01" />
+              <img src="img/ETEFA_main/cloud.svg" class="cloud cloud02" />
+              <img src="img/ETEFA_main/benefits/benefit-11.svg" />
+            </div>
+            <h3 class="benefit_title">乘客體驗</h3>
+            <p class="benefit_content mt-1">
+              即時了解車輛狀態(ex:預計到達的時間)讓乘客在旅途中的便利性擁有更出色的體驗。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section id="Feedback">
+      <div class="container">
+        <h6>CUSTOMER FEEDBACK</h6>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol> -->
+          <div
+            class="carousel-inner d-flex justify-content-cente align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="500"
+          >
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center">
+                  <img src="img/ETEFA_main/customer01.svg" class="customer" />
+                </div>
+                <div class="col-lg-8">
+                  <h4>Amy Wang<img src="img/ETEFA_main/decor_star.svg" class="decor" /></h4>
+                  <p class="title">Manager of Transport Company</p>
+                  <p class="feelings">
+                    使用這套系統後確實增加了車輛管理效率。 並且可以隨時掌握車輛資訊。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center">
+                  <img src="img/ETEFA_main/customer01.svg" class="customer" />
+                </div>
+                <div class="col-lg-8">
+                  <h4>Iris Wang<img src="img/ETEFA_main/decor_star.svg" class="decor" /></h4>
+                  <p class="title">Manager of Transport Company</p>
+                  <p class="feelings">
+                    使用這套系統後確實增加了車輛管理效率。 並且可以隨時掌握車輛資訊。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center">
+                  <img src="img/ETEFA_main/customer01.svg" class="customer" />
+                </div>
+                <div class="col-lg-8">
+                  <h4>Weeny Wang<img src="img/ETEFA_main/decor_star.svg" class="decor" /></h4>
+                  <p class="title">客運公司經理</p>
+                  <p class="feelings">
+                    使用這套系統後確實增加了車輛管理效率。 並且可以隨時掌握車輛資訊。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Usecase -->
+    <section id="Usecase">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+        <h6>USE CASE</h6>
+        <p>我們致力於為客戶量身打造最適合的方案。</p>
+      </div>
+      <div
+        class="container-fluid mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="500"
+        data-aos-delay="300"
+      >
+        <div class="tarkikComandSlider">
+          <article class="comandSlider__item">
+            <img
+              class="comandSlider__item_photo"
+              src="img/ETEFA_main/Slide/slide01.png"
+              alt="user1"
+            />
+            <div class="overlay">
+              <h4 class="text">Comming Soon</h4>
+            </div>
+          </article>
+
+          <article class="comandSlider__item">
+            <img
+              class="comandSlider__item_photo"
+              src="img/ETEFA_main/Slide/slide02.png"
+              alt="user1"
+            />
+            <div class="overlay">
+              <h4 class="text">Comming Soon</h4>
+            </div>
+          </article>
+
+          <article class="comandSlider__item">
+            <img
+              class="comandSlider__item_photo"
+              src="img/ETEFA_main/Slide/slide03.png"
+              alt="user1"
+            />
+            <div class="overlay">
+              <h4 class="text">Comming Soon</h4>
+            </div>
+          </article>
+          <article class="comandSlider__item">
+            <img
+              class="comandSlider__item_photo"
+              src="img/ETEFA_main/Slide/slide02.png"
+              alt="user1"
+            />
+            <div class="overlay">
+              <h4 class="text">Comming Soon</h4>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="allcircle">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+      </div>
+      <div class="allcircle02">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-3 d-flex align-items-center">
+                <img src="img/nav_footer/ecs_footer.svg" class="img-fluid" />
+              </div>
+              <span class="column01"></span>
+              <div class="col-md-8 contact pl-lg-5">
+                <h5>聯絡我們</h5>
+                <p>
+                  想了解如何更有效地提升管理效能與發現更多機會, 請與我們聯繫。
+                </p>
+                <p class="email">
+                  <img src="img/nav_footer/mail.png" style="width: 27px; margin: -5px 10px 0px 0px;" />BD@ecs.com.tw
+                </p>
+              </div>
+              <span class="column01"></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <h5>網站導覽</h5>
+                <p class="about_p">. 關於我們</p>
+                <p class="about_p">. 活動 </p>
+                <p class="about_p">. 成功案例 </p>
+                <p class="about_p">. 服務</p>
+    
+              </div>
+              <div class="col-md-6">
+                <h5>Information</h5>
+                <p class="about_p">. Terms & Conditions</p>
+                <p class="about_p">. 隱私政策</p>
+                <p class="about_p">. 支援</p>
+                <p class="about_p">. 成為我們的夥伴</p>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <div class="row">
+    
+          <div class="input-group d-flex justify-content-xl-center mb-3 px-3">
+            <h5 class="mr-2">訂閱掌握最新動態</h5>
+            <input class="col-lg-6" type="text" class="form-control" placeholder="Enter your Email"" aria-label="
+              Recipient's username" aria-describedby="basic-addon2">
+    
+            <div class="input-group-append">
+              <button type="button" class="btn btn-info ml-2 subscribe">訂閱</button>
+            </div>
+          </div>
+        </div>
+        <p class="text-center copyright">Copyright 2020 © ECS | All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- partial -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="./etefa_main.js"></script>
+  </body>
+</html>

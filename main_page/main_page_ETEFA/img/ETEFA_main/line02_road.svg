@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1748" height="1923" viewBox="0 0 1748 1923">
+  <defs>
+    <clipPath id="clip-line02_road">
+      <rect width="1748" height="1923"/>
+    </clipPath>
+  </defs>
+  <g id="line02_road" clip-path="url(#clip-line02_road)">
+    <path id="road_line" d="M2394.59,64.734V297.8c0,147.855-124.48,267.714-278.031,267.714H1213.271c-153.553,0-278.031,119.859-278.031,267.713V852.61c0,147.855,124.478,267.713,278.031,267.713h966.19c153.551,0,278.031,119.859,278.031,267.713h0c0,147.855-124.48,232.326-278.031,232.326l-938.151-12.676c-85.869-.7-193,59.157-224.853,119.628-56.627,107.5-49.8,245.216-49.8,245.216" transform="translate(-800.366 -49.234)" fill="none" stroke="#3bd1d6" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6" stroke-dasharray="10 15" opacity="0.317"/>
+  </g>
+</svg>
